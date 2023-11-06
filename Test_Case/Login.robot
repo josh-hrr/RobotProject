@@ -61,7 +61,7 @@ Test Case 1: Register User
     element text should be          css:.title b        ACCOUNT CREATED!
     click link                      css:a[data-qa="continue-button"]
     sleep                           3s
-    element should contain          css:.navbar-nav li:nth-child(10)            ${name}
+    element should contain          css:.navbar-nav li b    ${name}
     sleep                           3s
     click link                      css:.navbar-nav li a[href="/delete_account"]
     sleep                           3s
