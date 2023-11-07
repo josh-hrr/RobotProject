@@ -61,7 +61,7 @@ Test Case 1: Register User
     element text should be          css:.title b        ACCOUNT CREATED!
     click link                      css:a[data-qa="continue-button"]
     sleep                           3s
-    element should contain          css:.navbar-nav li b    ${name}
+    element should contain          xpath=//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/b    ${name}
     sleep                           3s
     click link                      css:.navbar-nav li a[href="/delete_account"]
     sleep                           3s
